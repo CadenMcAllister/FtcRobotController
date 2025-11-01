@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import org.firstinspires.ftc.teamcode.mechanisms.ArcadeDrive;
 import org.firstinspires.ftc.teamcode.testBench.LauncherTest;
 
-@TeleOp
+@TeleOp (name = "FullTeleOPTest")
 public class FullTeleopTest extends OpMode {
     private final LauncherTest shootTest = new LauncherTest();
     private final ArcadeDrive drive = new ArcadeDrive();
