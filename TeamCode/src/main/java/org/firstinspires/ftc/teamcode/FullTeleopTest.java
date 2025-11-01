@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 import org.firstinspires.ftc.teamcode.mechanisms.ArcadeDrive;
-import org.firstinspires.ftc.teamcode.testBench.LauncherTest;
+import org.firstinspires.ftc.teamcode.mechanisms.LauncherTest;
 
 @TeleOp (name = "FullTeleOPTest")
 public class FullTeleopTest extends OpMode {
@@ -28,6 +28,10 @@ public class FullTeleopTest extends OpMode {
             shooting = !shooting;
         }
         prevA = gamepad1.a;
+
+        //Telemetry for monitoring and debugging shooting
+        telemetry.addData("Shooting?", shooting);
+        telemetry.update();
 
         // Apply shooter power from toggle state
         double shooterPower = shooting ? 1.0 : 0.0;

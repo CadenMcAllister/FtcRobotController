@@ -1,8 +1,8 @@
-package org.firstinspires.ftc.teamcode;
+package org.firstinspires.ftc.teamcode.important_op_Modes;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
-import org.firstinspires.ftc.teamcode.testBench.LauncherTest;
+import org.firstinspires.ftc.teamcode.mechanisms.LauncherTest;
 
 @Autonomous
 public class ShooterTestOpMode extends OpMode {
