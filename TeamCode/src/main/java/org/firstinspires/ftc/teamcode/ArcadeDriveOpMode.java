@@ -8,7 +8,7 @@ import org.firstinspires.ftc.teamcode.mechanisms.ArcadeDrive;
 @TeleOp
 public class ArcadeDriveOpMode extends OpMode {
 
-    ArcadeDrive drive = new ArcadeDrive();
+    final ArcadeDrive drive = new ArcadeDrive();
     double throttle, spin;
 
     @Override
