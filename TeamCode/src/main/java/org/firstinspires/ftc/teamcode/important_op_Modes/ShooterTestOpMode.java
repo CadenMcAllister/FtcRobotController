@@ -2,12 +2,12 @@ package org.firstinspires.ftc.teamcode.important_op_Modes;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
-import org.firstinspires.ftc.teamcode.mechanisms.LauncherTest;
+import org.firstinspires.ftc.teamcode.mechanisms.LauncherClass;
 
 @Autonomous
 public class ShooterTestOpMode extends OpMode {
 
-    final LauncherTest shootTest = new LauncherTest();
+    final LauncherClass shootTest = new LauncherClass();
     double power;
 
     @Override
@@ -18,12 +18,12 @@ public class ShooterTestOpMode extends OpMode {
     @Override
     public void loop(){
         power = 1.0;
-        shootTest.shootTest(power);
+        shootTest.shootFunc(power);
     }
 
     @Override
     public void stop(){
         // Ensure motor is stopped when OpMode ends
-        shootTest.shootTest(0.0);
+        shootTest.shootFunc(0.0);
     }
 }

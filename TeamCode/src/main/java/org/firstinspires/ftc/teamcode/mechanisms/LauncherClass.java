@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 
-public class LauncherTest {
+public class LauncherClass {
     private DcMotor shooterMotor;
 
     public void init(HardwareMap hwMap) {
@@ -14,7 +14,7 @@ public class LauncherTest {
         shooterMotor.setDirection(DcMotorSimple.Direction.REVERSE);
     }
 
-    public void shootTest(double power){
+    public void shootFunc(double power){
         // Set the power for the shooter motor between -1.0 and 1.0
         shooterMotor.setPower(power);
     }

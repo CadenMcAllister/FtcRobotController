@@ -1,12 +1,10 @@
-package org.firstinspires.ftc.teamcode;
+package org.firstinspires.ftc.teamcode.mechanisms;
 
-import com.qualcomm.robotcore.eventloop.opmode.OpMode;
-import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
-public class IntakeTest{
+public class IntakeClass {
     private DcMotor intakeMotor;
 
     public void init(HardwareMap hwMap) {
@@ -15,7 +13,7 @@ public class IntakeTest{
         intakeMotor.setDirection(DcMotorSimple.Direction.REVERSE);
     }
 
-    public void intakeTest(double power){
+    public void intakeFunc(double power){
         intakeMotor.setPower(power);
     }
 }
